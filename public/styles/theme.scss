@@ -1,0 +1,25 @@
+@import url("font.scss");
+
+body {
+  margin: 0;
+  font-family: "Brandon Grotesque Regular";
+  font-style: normal;
+  font-weight: 400;
+}
+
+$desktop-size: 1920px;
+$desktop-small-size: 1200px;
+$tablet_horizontal: 1024px;
+$ablet_vertical: 768px;
+$cellphone: 568px;
+$cellphone_small: 320px;
+
+$color: (
+  text: "#333",
+  background: "#fff",
+  link: "#1eaaf1",
+  linkHover: "#0d8ecf",
+  border: "#ddd",
+  warning: "#fff3cd",
+  success: "#d4edda"
+);

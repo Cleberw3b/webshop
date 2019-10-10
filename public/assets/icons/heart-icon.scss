@@ -1,0 +1,27 @@
+.heart-icon {
+  fill: black;
+}
+
+.heart-icon.is-outlined {
+  stroke: black;
+  stroke-width: 2px;
+  fill: transparent;
+}
+
+.heart-icon.is-hoverable:hover {
+  fill: #fe4365;
+  cursor: pointer;
+}
+
+.heart-icon.is-activeable:active {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+.heart-icon.is-transit {
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  -ms-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}

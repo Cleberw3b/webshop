@@ -1,0 +1,40 @@
+{
+  "name": "webshop",
+  "version": "0.1.0",
+  "description": "Loja Ozllo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ozllo/webshop.git"
+  },
+  "keywords": [
+    "moda",
+    "acessorios de luxo",
+    "marcas famosas",
+    "moda premium"
+  ],
+  "bugs": {
+    "url": "https://github.com/Ozllo/webshop/issues"
+  },
+  "homepage": "https://github.com/Ozllo/webshop#readme",
+  "author": "Cleber Oliveira <cleberw3b@gmail.com> (https://github.com/Cleberw3b)",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^9.1.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.5.3",
+    "node-sass": "^4.12.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.1.0"
+  }
+}

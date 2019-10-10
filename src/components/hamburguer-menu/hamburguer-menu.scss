@@ -1,0 +1,25 @@
+.hamburguer-menu-button {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-list {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 200ms;
+  overflow-x: hidden;
+}
+
+.menu-list.active {
+  opacity: 1;
+  left: 0;
+  height: auto;
+  transition-duration: 480ms;
+  -webkit-transition-duration: 480ms;
+  -webkit-transform: translate3d(0.08361px, 15px, 0);
+  transform: translate3d(0.08361px, 15px, 0);
+}
