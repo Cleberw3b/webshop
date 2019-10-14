@@ -5,6 +5,12 @@ const Header = props => (
     <meta name="author" content="CleberW3b - Cléber Oliveira" key="author" />
     <title>{props.title}</title>
     <link rel="shortcut icon" href="/static/favicon.ico" key="icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossOrigin="anonymous"
+    />
     <meta
       name="msapplication-TileColor"
       content="#ffffff"

@@ -1,0 +1,44 @@
+.banner-carousel {
+  position: relative;
+}
+
+.carousel-item.carousel-item .shopnow-button {
+  position: absolute;
+  top: calc(100vh - 210px);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.carousel.slide {
+  height: calc(100vh - 108px);
+  overflow: hidden;
+}
+
+.carousel-indicators {
+  // position: static;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  // background-color: black;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.carousel-indicators li.active {
+  transform: scale(1.3, 1.3) translate3d(0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    bottom: 65px;
+  }
+}

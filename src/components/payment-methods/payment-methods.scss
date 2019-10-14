@@ -1,0 +1,13 @@
+.payment-methods {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .payment-methods {
+    // margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

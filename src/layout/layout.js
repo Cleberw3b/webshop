@@ -11,6 +11,7 @@ const Layout = ({ children }) => (
   <>
     <Header />
     <Nav />
+    <div className="overlay"></div>
     {children}
     <Footer />
   </>

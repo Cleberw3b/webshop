@@ -5,7 +5,11 @@
   align-items: center;
   border-bottom: 0.6px solid #e1e1e1;
   border-top: 0.6px solid #e1e1e1;
-  padding-bottom: 16px;
+  padding: 20px 0;
+}
+
+.newsletter h1 {
+  font-size: 22px;
 }
 
 .newsletter input {
@@ -16,7 +20,6 @@
   letter-spacing: 1.36px;
   width: 380px;
   text-align: center;
-  padding-bottom: 4px;
 }
 
 .newsletter button {
@@ -24,15 +27,10 @@
   background: black;
   color: rgb(201, 201, 201);
   letter-spacing: 1.36px;
-  font-size: 16px;
   padding: 5px 18px;
 }
 
 @media screen and (max-width: 568px) {
-  .newsletter h1 {
-    font-size: 20px;
-  }
-
   .newsletter input {
     width: 300px;
   }

@@ -1,0 +1,26 @@
+.header-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.6px solid #e2e2e2;
+  padding: 4px 12px;
+}
+
+.header-contact-social-network-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-contact-social-network-box svg:first-of-type {
+  margin: 0 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-contact {
+    background-color: black;
+    color: white;
+    padding: 2px 12px;
+  }
+}

@@ -7,12 +7,24 @@ body {
   font-weight: 400;
 }
 
-$desktop-size: 1920px;
-$desktop-small-size: 1200px;
-$tablet_horizontal: 1024px;
-$ablet_vertical: 768px;
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 30;
+}
+
+$desktopSize: 1920px;
+$desktopSmallSize: 1200px;
+$tabletHorizontal: 1024px;
+$tabletVertical: 768px;
 $cellphone: 568px;
-$cellphone_small: 320px;
+$cellphoneSmall: 320px;
 
 $color: (
   text: "#333",

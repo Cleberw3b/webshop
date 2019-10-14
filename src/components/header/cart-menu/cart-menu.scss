@@ -1,0 +1,137 @@
+.cart-menu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-menu.button {
+  display: flex;
+}
+
+.cart-menu-box {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 100vw;
+  top: 108px;
+  transition-duration: 200ms;
+  -webkit-transition-duration: 200ms;
+  -webkit-transform: translate3d(-100vw, 0, 0);
+  transform: translate3d(-100vw, 0, 0);
+}
+
+.cart-menu-box.active {
+  opacity: 1;
+  z-index: 99;
+  left: 0;
+  transition-duration: 480ms;
+  -webkit-transition-duration: 480ms;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.cart-menu-list {
+  opacity: 0;
+  background: white;
+}
+
+.active .cart-menu-list {
+  opacity: 1;
+}
+
+.cart-menu-list > h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  margin-bottom: 0;
+  border-bottom: 0.5px solid #e2e2e2;
+}
+
+.cart-item-box {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 322px);
+  overflow-x: scroll;
+  border-bottom: 0.5px solid #e2e2e2;
+}
+
+.cart-item {
+  border-bottom: 0.5px solid #e2e2e2;
+  padding: 12px;
+}
+
+.cart-item-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-item-description > img {
+  width: 130px;
+  height: 130px;
+}
+
+.cart-item-description-text {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1.18px;
+  color: #707070;
+  margin-left: 8px;
+}
+
+.cart-item-description-text h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.cart-item-description-text h3 {
+  font-size: 16px;
+}
+
+.cart-item-description-text h3:nth-child(2) {
+  color: black;
+  font-weight: 700;
+}
+
+.cart-total {
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.cart-item-control {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content: center;
+}
+
+.cart-item-control-unit {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-item-control-unit > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+}
+
+.cart-item-control-unit span:not(:nth-child(2)) {
+  border: 0.5px solid black;
+}
+
+.cart-item-control-delete {
+  float: right;
+  margin: -34px 4px 0 0;
+}
+
+.cart-checkout-button {
+  color: white;
+  background: black;
+  padding: 20px 0;
+  text-align: center;
+}

@@ -1,8 +1,14 @@
 // pages/index.js
-
+import dynamic from "next/dynamic";
 import Header from "../components/header";
 import Contact from "../components/index/contact/contact";
 import Newsletter from "../components/index/newsletter/newsletter";
+const BannerCarousel = dynamic(
+  () => import("../components/index/banner-carousel/banner-carousel"),
+  {
+    ssr: false
+  }
+);
 
 const title = "Ozllo";
 
@@ -22,7 +28,7 @@ const extra_meta = [keywords, description];
 const Home = props => (
   <>
     <Header title={title} extra_meta={extra_meta} />
-    <h1>{props.test}</h1>
+    <BannerCarousel />
     <Newsletter />
     <Contact />
   </>

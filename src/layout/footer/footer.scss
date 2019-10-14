@@ -6,13 +6,14 @@
 }
 
 .footer-content {
-  padding: 32px 128px;
+  padding: 32px 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
 .footer-content h4 {
+  font-size: 18px;
   height: 50px;
 }
 
@@ -34,12 +35,6 @@
   display: flex;
   flex-direction: column;
   padding: 0 16px;
-}
-
-.footer-payment-methods {
-  display: flex;
-  flex-direction: row;
-  margin-top: -6px;
 }
 
 .footer-copyright {
@@ -67,6 +62,7 @@
 
   .footer-content h4 {
     height: 30px;
+    margin-top: 20px;
   }
 
   .footer-content-links,
@@ -83,10 +79,6 @@
 
   .footer-payment {
     text-align: center;
-  }
-
-  .footer-payment-methods {
-    margin: 0 auto;
   }
 
   .footer-copyright {
@@ -106,6 +98,7 @@
 
   .footer-content-extra h4 {
     height: 40px;
+    margin-top: 24px;
     margin-bottom: 10px;
   }
 }

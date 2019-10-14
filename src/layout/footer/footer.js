@@ -1,12 +1,7 @@
 import Link from "next/link";
+import isMobile from "../../../public/js/isMobile";
+import PaymentMethods from "../../components/payment-methods/payment-methods";
 import "./footer.scss";
-import isMobile from "../../../public/js/is-mobile";
-import MastercardIcon from "../../../public/assets/icons/formas de pagamento/fc-mastercard-2";
-import VisaIcon from "../../../public/assets/icons/formas de pagamento/fc-visa";
-import EloIcon from "../../../public/assets/icons/formas de pagamento/fc-elo";
-import HipercardIcon from "../../../public/assets/icons/formas de pagamento/fc-hipercard";
-import DinersClubIcon from "../../../public/assets/icons/formas de pagamento/fc-diners-club";
-import AmericanExpressIcon from "../../../public/assets/icons/formas de pagamento/fc-american-express";
 
 const AboutUs = () => (
   <div className="footer-about-us">
@@ -42,17 +37,10 @@ const Authenticity = () => (
   </div>
 );
 
-const PaymentMethods = () => (
+const Payment = () => (
   <div className="footer-payment">
     <h4>FORMAS DE PAGAMENTO</h4>
-    <div className="footer-payment-methods">
-      <MastercardIcon width="47" height="30" />
-      <VisaIcon width="47" height="30" />
-      <EloIcon width="47" height="30" />
-      <HipercardIcon width="47" height="30" />
-      <DinersClubIcon width="47" height="30" />
-      <AmericanExpressIcon width="47" height="30" />
-    </div>
+    <PaymentMethods />
   </div>
 );
 
@@ -82,7 +70,7 @@ const Mobile = () => (
         <Authenticity />
         <BuyNow />
       </div>
-      <PaymentMethods />
+      <Payment />
       <Copyrights />
     </div>
   </footer>
@@ -95,7 +83,7 @@ const Desktop = () => (
       <Help />
       <Authenticity />
       <BuyNow />
-      <PaymentMethods />
+      <Payment />
     </div>
     <Copyrights />
   </footer>
