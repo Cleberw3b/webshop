@@ -8,6 +8,12 @@
   fill: transparent;
 }
 
+.heart-icon.is-outlined-thin {
+  stroke: black;
+  stroke-width: 1px;
+  fill: transparent;
+}
+
 .heart-icon.is-hoverable:hover {
   fill: #fe4365;
   cursor: pointer;

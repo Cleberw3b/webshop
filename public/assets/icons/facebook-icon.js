@@ -12,8 +12,8 @@ const FacebookIcon = ({ color, height, width }) => (
 );
 
 function setColor(color) {
-  if (color === "white") return "instagram-icon-white";
-  return "instagram-icon-black";
+  if (color === "white") return "facebook-icon-white";
+  return "facebook-icon-black";
 }
 
 export default FacebookIcon;

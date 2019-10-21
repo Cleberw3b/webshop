@@ -1,0 +1,61 @@
+.instagram-display-box {
+  padding: 24px 16px;
+}
+
+.instagram-display-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-display-title > svg {
+  margin: -10px 10px 0 0;
+}
+
+.instagram-display-title > h3 {
+  font-size: 30px;
+}
+
+.instagram-display-box .BrainhubCarousel__trackContainer {
+  margin: 0 30px;
+}
+
+.instagram-display-box .BrainhubCarouselItem {
+  max-height: 230px;
+}
+
+.instagram-display-box .BrainhubCarouselItem > img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .instagram-display-box {
+    background-color: #fbfbfb;
+    padding: 0 0 18px 0;
+  }
+
+  .instagram-display-title > h3 {
+    font-size: 22px;
+    padding: 20px 0;
+  }
+
+  .instagram-display-image-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 365px;
+  }
+
+  .instagram-display-image-box > img {
+    background: #fbfbfb;
+    object-fit: cover;
+    width: 48vw;
+    max-width: 48vw;
+    max-height: 180px;
+    padding: 3px;
+  }
+}

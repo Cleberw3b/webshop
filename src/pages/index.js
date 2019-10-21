@@ -3,12 +3,21 @@ import dynamic from "next/dynamic";
 import Header from "../components/header";
 import Contact from "../components/index/contact/contact";
 import Newsletter from "../components/index/newsletter/newsletter";
+import GenderDisplay from "../components/index/gender-display/gender-display";
+import BestSeelerDisplay from "../components/index/best-seller-display/best-seller-display";
+const InstagramDisplay = dynamic(
+  () => import("../components/index/instagram-display/instagram-display"),
+  {
+    ssr: false
+  }
+);
 const BannerCarousel = dynamic(
   () => import("../components/index/banner-carousel/banner-carousel"),
   {
     ssr: false
   }
 );
+import "react-awesome-slider/src/core/styles.scss";
 
 const title = "Ozllo";
 
@@ -28,9 +37,12 @@ const extra_meta = [keywords, description];
 const Home = props => (
   <>
     <Header title={title} extra_meta={extra_meta} />
-    <BannerCarousel />
-    <Newsletter />
-    <Contact />
+    {/* <BannerCarousel /> */}
+    {/* <GenderDisplay /> */}
+    <BestSeelerDisplay />
+    {/* <InstagramDisplay /> */}
+    {/* <Newsletter /> */}
+    {/* <Contact /> */}
   </>
 );
 

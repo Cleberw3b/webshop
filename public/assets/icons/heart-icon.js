@@ -2,6 +2,7 @@ import "./heart-icon.scss";
 
 const HeartIcon = ({
   outlined,
+  outlinedThin,
   hoverable,
   transit,
   activeable,
@@ -14,6 +15,7 @@ const HeartIcon = ({
     className={
       "heart-icon" +
       `${outlined ? " is-outlined" : ""}` +
+      `${outlinedThin ? " is-outlined-thin" : ""}` +
       `${hoverable ? " is-hoverable" : ""}` +
       `${transit ? " is-transit" : ""}` +
       `${activeable ? " is-activeable" : ""}`

@@ -1,7 +1,7 @@
 import Link from "next/link";
+import TopNav from "../../components/header/top-nav/top-nav";
 import HeartIcon from "../../../public/assets/icons/heart-icon";
 import SearchIcon from "../../../public/assets/icons/search-icon";
-import TopNav from "../../components/header/top-nav/top-nav";
 import HamburguerMenu from "../../components/header/hamburguer-menu/hamburguer-menu";
 import SearchMobile from "../../components/header/search-mobile/search-mobile";
 import AccountMenu from "../../components/header/account-menu/account-menu";
@@ -89,7 +89,7 @@ const MobileMenu = () => (
 );
 
 const Desktop = () => (
-  <div className="header-box">
+  <section className="header-box">
     <TopNav />
     <div className="nav-box">
       <Logo />
@@ -104,11 +104,11 @@ const Desktop = () => (
         <Cart />
       </div>
     </div>
-  </div>
+  </section>
 );
 
 const Mobile = () => (
-  <div className="header-box">
+  <section className="header-box">
     <TopNav isMobile />
     <div className="nav-box">
       <MobileMenu />
@@ -117,7 +117,7 @@ const Mobile = () => (
       <Account />
       <Cart />
     </div>
-  </div>
+  </section>
 );
 
 import NavProvider from "./navProvider";
@@ -138,7 +138,7 @@ const Nav = () => {
             {isAnyOpen() && (
               <style jsx global>{`
                 .overlay {
-                  height: 100%;
+                  height: 100vh;
                 }
               `}</style>
             )}

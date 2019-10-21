@@ -1,44 +1,40 @@
 .banner-carousel {
   position: relative;
+  height: calc(100vh - 109px);
+  max-height: calc(100vh - 109px);
 }
 
-.carousel-item.carousel-item .shopnow-button {
-  position: absolute;
-  top: calc(100vh - 210px);
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+.banner-carousel .aws-sld__bullets {
+  bottom: 5vh;
+  z-index: 2;
 }
 
-.carousel {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.carousel.slide {
-  height: calc(100vh - 108px);
-  overflow: hidden;
+.banner-carousel .aws-sld__bullets .aws-sld__bullets--active {
+  background: white;
+  border: none;
 }
 
-.carousel-indicators {
-  // position: static;
-}
-
-.carousel-indicators li {
+.banner-carousel .aws-sld__bullets button {
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  // background-color: black;
-  margin: 0 4px;
-  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
 }
 
-.carousel-indicators li.active {
-  transform: scale(1.3, 1.3) translate3d(0, 0, 0);
+.banner-carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  .carousel-caption {
-    bottom: 65px;
-  }
+.banner-carousel-item > img {
+  object-fit: cover;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+}
+
+.banner-carousel-item .shopnow-button {
+  position: absolute;
+  bottom: 12vh;
 }

@@ -8,11 +8,11 @@
   padding: 20px 0;
 }
 
-.newsletter h1 {
+.newsletter > h1 {
   font-size: 22px;
 }
 
-.newsletter input {
+.newsletter > input {
   margin-top: 16px;
   outline: none;
   border: none;
@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.newsletter button {
+.newsletter > button {
   margin-top: 8px;
   background: black;
   color: rgb(201, 201, 201);
@@ -31,7 +31,12 @@
 }
 
 @media screen and (max-width: 568px) {
-  .newsletter input {
+  .newsletter {
+    background-color: #fbfbfb;
+  }
+
+  .newsletter > input {
     width: 300px;
+    background: #fbfbfb;
   }
 }

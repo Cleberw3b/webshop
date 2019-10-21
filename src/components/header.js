@@ -7,10 +7,10 @@ const Header = props => (
     <link rel="shortcut icon" href="/static/favicon.ico" key="icon" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://cdn.jsdelivr.net/npm/@brainhubeu/react-carousel@1.10.27/lib/style.css"
+      integrity="sha256-RPGWlNKxUljRpncXCQ0S6HqErtsoRvXU2ojZhFJfSaQ="
       crossOrigin="anonymous"
-    />
+    ></link>
     <meta
       name="msapplication-TileColor"
       content="#ffffff"

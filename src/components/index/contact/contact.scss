@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.contact h3 {
+.contact > h3 {
   letter-spacing: 1.82px;
   font-size: 22px;
   margin-top: 20px;
@@ -35,7 +35,7 @@
   margin-bottom: 10px;
 }
 
-.contact-social-network-icon-box svg {
+.contact-social-network-icon-box > svg {
   margin: 0 6px;
 }
 
@@ -46,6 +46,7 @@
 @media screen and (max-width: 768px) {
   .contact {
     flex-direction: column;
+    background-color: #fbfbfb;
   }
 
   .contact > div {

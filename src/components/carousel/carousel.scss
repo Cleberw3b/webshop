@@ -1,0 +1,78 @@
+.carousel-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.carousel-item-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 25px;
+  z-index: 1;
+}
+
+.carousel-item {
+  margin: 0 12px;
+}
+
+.carousel-next-button,
+.carousel-prev-button {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-prev-button {
+  left: 0;
+}
+
+.carousel-next-button {
+  right: 0;
+}
+
+.carousel-nav-box {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.carousel-dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+// .fade {
+//   -webkit-animation-name: fade;
+//   -webkit-animation-duration: 1s;
+//   animation-name: fade;
+//   animation-duration: 1s;
+// }
+
+// .slideshow-content-show {
+//   display: flex;
+//   flex-direction: column;
+// }
+// /* Hide the images by default */
+// .slideshow-content-hide {
+//   display: none;
+// }

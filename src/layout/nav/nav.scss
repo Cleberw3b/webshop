@@ -1,9 +1,11 @@
 .header-box {
-  position: relative;
   display: flex;
   flex-direction: column;
   height: 108px;
   border-bottom: 1px solid #707070;
+  position: -webkit-sticky;
+  position: sticky;
+  background: white;
   z-index: 90;
 }
 
@@ -12,7 +14,6 @@
   flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
-  background-color: white;
   align-items: center;
   padding: 20px 15px 15px 15px;
   height: 100%;
@@ -63,25 +64,25 @@
 }
 
 .nav-search {
+  position: relative;
   display: flex;
   flex-direction: row;
-  position: relative;
   margin-right: 12px;
   width: 100%;
 }
 
-.nav-search input {
+.nav-search > input {
   border: none;
   outline: none;
   border-bottom: 1px solid;
   width: 100%;
-  padding: 0 10px 2px 0;
+  padding-right: 10px;
   text-align: left;
   opacity: 0.6;
   font-size: 15px;
 }
 
-.nav-search svg {
+.nav-search > svg {
   position: absolute;
   margin-left: auto;
   font-size: 16px;
@@ -98,7 +99,6 @@
   align-items: center;
 }
 
-span.nav-cart-count,
 span.nav-wishlist-count {
   background: black;
   border-radius: 0.8em;
@@ -111,20 +111,7 @@ span.nav-wishlist-count {
   text-align: center;
   font-size: 12px;
   width: 1.4em;
-}
-
-.nav-wishlist span {
   margin-left: -2px;
-}
-
-.nav-cart {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.nav-cart span {
-  margin-left: -4px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -147,7 +134,7 @@ span.nav-wishlist-count {
     color: white;
   }
 
-  .nav-box img {
+  .nav-box > img {
     margin: 0 auto;
   }
 

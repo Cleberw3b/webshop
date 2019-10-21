@@ -26,14 +26,14 @@
   "author": "Cleber Oliveira <cleberw3b@gmail.com> (https://github.com/Cleberw3b)",
   "license": "MIT",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.27",
     "@zeit/next-sass": "^1.0.1",
-    "bootstrap": "^4.3.1",
     "next": "^9.1.1",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.5.3",
     "node-sass": "^4.12.0",
     "react": "^16.10.2",
-    "react-bootstrap": "^1.0.0-beta.14",
+    "react-awesome-slider": "^2.0.0",
     "react-dom": "^16.10.2"
   },
   "devDependencies": {

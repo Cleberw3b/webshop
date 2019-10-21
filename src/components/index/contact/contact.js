@@ -1,6 +1,6 @@
-import "./contact.scss";
 import FacebookIcon from "../../../../public/assets/icons/facebook-icon";
 import InstagramIcon from "../../../../public/assets/icons/instagram-icon";
+import "./contact.scss";
 
 const Contact = () => (
   <div className="contact">

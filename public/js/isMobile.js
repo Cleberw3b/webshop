@@ -1,4 +1,4 @@
-import useWindowDimensions from "../../src/hooks/window-dimensions";
+import useWindowDimensions from "../../src/hooks/useDimensions";
 
 export default function isMobile() {
   const { width } = useWindowDimensions();
