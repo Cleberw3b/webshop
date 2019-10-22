@@ -37,12 +37,12 @@ const extra_meta = [keywords, description];
 const Home = props => (
   <>
     <Header title={title} extra_meta={extra_meta} />
-    {/* <BannerCarousel /> */}
-    {/* <GenderDisplay /> */}
+    <BannerCarousel />
+    <GenderDisplay />
     <BestSeelerDisplay />
-    {/* <InstagramDisplay /> */}
-    {/* <Newsletter /> */}
-    {/* <Contact /> */}
+    <InstagramDisplay />
+    <Newsletter />
+    <Contact />
   </>
 );
 

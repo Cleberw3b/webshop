@@ -19,7 +19,7 @@ const Carousel = props => {
   }
 
   useEffect(() => {
-    if (current + 4 >= size) setCurrent(0);
+    if (current + size / 2 > size) setCurrent(0);
     const next = (current + 1) % size;
     const id = setTimeout(() => setCurrent(next), interval);
     return () => clearTimeout(id);
@@ -34,7 +34,7 @@ const Carousel = props => {
 
   return (
     <>
-      <div className="carousel-container" ref={hoverRef}>
+      <div className="carousel-container">
         <div className="carousel-prev-button" onClick={decrement}>
           <LeftArrowIcon />
         </div>
